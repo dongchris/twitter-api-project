@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users followed by {{name}}</title>
+    <style type="text/css">
+        a:link {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Users followed by {{test}}</h2>
+
+
+
+
+
+<table>
+<tbody>
+    {% for fulln, numf, created, pic, screen in test1%}
+<tr>
+    
+    <td align=center width="80"><img src="{{pic}}"></td>
+    <td style="font-size:70%; font-family:Verdana, sans-serif">
+        <a href="{{screen}}">{{fulln}}</a><br>
+        {{numf}} followers<br>
+        Since {{created}}
+    </td>
+</tr>
+    {% endfor %}
+</tbody>
+</table>
+
+</body>
+</html>
