@@ -12,6 +12,6 @@ and localhosts:5000/following/realdonaldtrump to see the followers.
 
 <img src="trump-tweets.png">
 
-<img src="trump-following.png>
+<img src="trump-following.png">
 
 
