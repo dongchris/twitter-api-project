@@ -50,8 +50,6 @@ def fetch_tweets(api, name):
        count: number of tweets
        tweets: list of tweets, each tweet is a dictionary
 
-    For efficiency, create a single Vader SentimentIntensityAnalyzer()
-    per call to this function, not per tweet.
     """
     user = api.get_user(name)
     userScreenName = user.screen_name
@@ -126,9 +124,6 @@ def fetch_following(api,name):
        followers: number of followers
        created: created date (no time info)
        image: the URL of the profile's image
-
-    To collect data: get a list of "friends IDs" then get
-    the list of users for each of those.
     """
     
     friendList = []
